@@ -1,5 +1,4 @@
 import random #pseudorandom library for picking of an integer
-guesses = 0 #initializing the count of the guesses
 secret_number = random.randint(1, 20) #picking a random number
 
 user_guess = int(input("Guess what the secret integer betweem 1 and 20 is ")) #The initial guess of the game, must convert variable to type integer for comparison
