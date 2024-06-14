@@ -1,7 +1,7 @@
 from Bio import SeqIO
 import csv
 
-fasta_file = "C:\work\Boaz-Y.github.io\day06\proteome.fasta"
+fasta_file = "proteome.fasta"
 csv_file = "proteome.csv"
 
 with open(fasta_file) as fasta, open(csv_file, "w", newline='') as csvfile:
