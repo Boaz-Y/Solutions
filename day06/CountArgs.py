@@ -1,4 +1,5 @@
 import csv
+import argparse
 
 def process_proteins(input_csv, output_csv):
     with open(input_csv, 'r') as infile, open(output_csv, 'w', newline='') as outfile:
@@ -17,7 +18,12 @@ def process_proteins(input_csv, output_csv):
 
             csvwriter.writerow([protein_ID, arginine_count, aa_count, ratio])
 
-input_csv_path = "proteome.csv"
-output_csv_path = "analyzed_proteome.csv"
+def parse_arguments():
+    parser = argparse.ArgumentParser(description="Process protein sequences to count arginines and compute ratios.")
+    parser.add_argument("input_csv", help="Path to the input CSV file")
+    parser.add_argument("output_csv", help="Path to the output CSV file")
+    return parser.parse_args()
 
-process_proteins(input_csv_path, output_csv_path)
+if __name__ == "__main__":
+    args = parse_arguments()
+    process_proteins(args.input_csv, args.output_csv)
