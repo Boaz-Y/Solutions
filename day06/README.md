@@ -4,4 +4,4 @@ CountArgs is a program for calculating the number of arginine amino acids presen
 
 The calculated values are: the amount of arginines, the number of amino acids, and the percent of arginines out of total amino acids
 
-It's important to note that I'm running this on only about 45% of the human proteome data, because I can't upload a file greater than 25MB to github. To do this I used a program that's included (shorten_proteom.py). Also, FASTA data is usually not in CSV format. For this conversion I have another program which can convert the .FASTA to .CSV, it's a precursor program, since the requirements for the assignment is .CSV.
+It's important to note that I'm running this on only about 45% of the human proteome data, because I can't upload a file greater than 25MB to github. To do this I used a program that's included `shorten_proteom.py`. Also, FASTA data is usually not in CSV format. For this conversion I have another program which can convert the .FASTA to .CSV, it's a precursor program, since the requirements for the assignment is .CSV.
