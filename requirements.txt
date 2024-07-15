@@ -1,0 +1,7 @@
+tkinter
+pandas
+numpy
+matplotlib
+biopython
+requests
+tqdm
