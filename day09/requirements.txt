@@ -1,4 +1,0 @@
-## Requirements
-
-- Python 3+
-- Biopython
