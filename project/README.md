@@ -36,6 +36,14 @@ python main.py
 5. Logging and debugging
 -The program is still relatively unstable, for this purpose we added a logging feature. Be sure to use this log when trying to understand what needs to be changed.
 
+## Parameters of the chain scoring
+Since the user is looking for different parameters for a "chain" it's important to understand what these "chains" are. 
+Chains are made up of repeats of specific codons, stretches where they appear in certain amounts.
+-Minimum initial stretch: the minimum number of codons from the scoring table to be present in sequence for the program to start the chain counting process
+-Maximum gap: the maximum length of codons not from the table in sequence after a stretch (can be a fraction of the length of the initial stretch)
+-Minimum Secondary Stretch: The minimum length for a stretch so that the chain continues counting after a gap (can be a fraction of the length of the initial stretch)
+-Minimum overall codons: the minimum number of codons from the table to be present in the overall chain for it to appear in the scoring results
+
 ## Dependencies
 
 This project uses the following Python standard library modules:
